@@ -3,7 +3,7 @@
 {% block main %}
     <!--CSS-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"/>
-    
+
     <!--Profile picture-->
     <img src="{{url_for('static', filename='IMG_0119.JPG')}}" alt="Profile Picture">
 
@@ -16,7 +16,7 @@
         <!--Location-->
         <p>Kingston, Jamaica</p>
         <!--Date joined-->
-        <p>Joined January, 2018</p>
+        <p>Joined {{dateJoined}}</p>
     </div>
 
     <!--Bio-->
