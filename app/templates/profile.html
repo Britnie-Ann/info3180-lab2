@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{{url_for('static', filename='app/static/css/app.css')}}"/>
-<meta charset="UTF-8">
-<title>Profile Information</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block main %}
     <!--Profile picture-->
-    <img src="link to Picture" alt="Profile Picture">
+    <img src="{{url_for('static', filename='IMG_0119.JPG')}}" alt="Profile Picture">
 
     <!--Name-->
     <h1>Mary Jane</h1>
@@ -47,6 +42,5 @@
     </div>
 
     <!--Follow Button-->
-    <button>Follow</button>
-</body>
-</html>
+    <button class="FollowBt">Follow</button>
+{% endblock %}
