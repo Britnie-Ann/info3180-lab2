@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block main %}
+    <!--CSS-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"/>
+    
     <!--Profile picture-->
     <img src="{{url_for('static', filename='IMG_0119.JPG')}}" alt="Profile Picture">
 
