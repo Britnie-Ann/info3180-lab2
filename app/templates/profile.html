@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='app/static/css/app.css')}}"/>
+<meta charset="UTF-8">
+<title>Profile Information</title>
+</head>
+<body>
+    <!--Profile picture-->
+    <img src="link to Picture" alt="Profile Picture">
+
+    <!--Name-->
+    <h1>Mary Jane</h1>
+
+    <div class="PersonalDetails">
+        <!--Username-->
+        <p>@mjane</p>
+        <!--Location-->
+        <p>Kingston, Jamaica</p>
+        <!--Date joined-->
+        <p>Joined January, 2018</p>
+    </div>
+
+    <!--Bio-->
+    <p class="Bio">I am smart and talented young woman who loves website design and development. 
+        Contact me if you'd like to work together on a new project.
+    </p>
+
+
+    <!--Profile Activity Data-->
+    <div class="ProfileData">
+        <!--Number of posts-->
+        <div class="PD">
+            <span class="Number">7</span>
+            <span class="Label">Posts</span>
+        </div>
+        <!--Following count-->
+        <div class="PD">
+            <span class="Number">100</span>
+            <span class="Label">Following</span>
+        </div>
+        <!--Followers count-->
+        <div class="PD">
+            <span class="Number">250</span>
+            <span class="Label">Followers</span>
+        </div>
+    </div>
+
+    <!--Follow Button-->
+    <button>Follow</button>
+</body>
+</html>
