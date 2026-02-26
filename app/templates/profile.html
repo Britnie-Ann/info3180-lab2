@@ -1,16 +1,15 @@
 {% extends "base.html" %}
 
 {% block main %}
+<body>
     <!--CSS-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/app.css')}}"/>
 
-    <!--Profile picture-->
-    <img src="{{url_for('static', filename='IMG_0119.JPG')}}" alt="Profile Picture">
-
-    <!--Name-->
-    <h1>Mary Jane</h1>
-
     <div class="PersonalDetails">
+        <!--Profile picture-->
+        <img src="{{url_for('static', filename='IMG_0119.JPG')}}" alt="Profile Picture">
+        <!--Name-->
+        <h1>Mary Jane</h1>
         <!--Username-->
         <p>@mjane</p>
         <!--Location-->
@@ -46,4 +45,5 @@
 
     <!--Follow Button-->
     <button class="FollowBt">Follow</button>
+</body>
 {% endblock %}

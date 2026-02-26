@@ -1,11 +1,28 @@
 body {
     padding-top: 5rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.PersonalDetails{
+    background-color: #C0D2ED;
 }
 
 .ProfileData{
-    display: flex;
+    display: inline-flex;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    place-items: center;
 }
 
 .PD{
@@ -21,4 +38,13 @@ body {
 .Label{
     font-size: 14px;
     color: #555;
+}
+
+.FollowBt{
+    display: block;
+    margin: 0 auto;
+    padding: 12px 28px;
+    background-color: #66ff6a;
+    color: #000000;
+    border-radius: 12px;
 }
